@@ -1,0 +1,11 @@
+---
+
+version: "2.1"
+services:
+  nzbget_exporter:
+    container_name: nzbget_exporter
+    build:
+      context: .
+    restart: always
+    ports:
+      - '8999:8999'
